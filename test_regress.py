@@ -3,15 +3,17 @@ __author__ = 'Admin'
 __author__ = 'Admin'
 from numpy import loadtxt,unique,count_nonzero,asarray
 from sklearn import linear_model,neighbors
-from sklearn.svm import LinearSVC
+from sklearn.svm import SVC,LinearSVC
 data = loadtxt('C:/Users/Admin/Documents/ML Project 4/COMP_598_A4/train_data.txt',delimiter=',')
 test_data = loadtxt('C:/Users/Admin/Documents/ML Project 4/COMP_598_A4/dataset/test_data.txt',delimiter=',')
-#X_train = data[:]
+#print len(cols_to_add)
+
+
 X_train = data[:]
 X_test = test_data[:]
 num_patients = unique(X_test[:,0])
-results = []
 true_labels = []
+results =[]
 for i in num_patients:
     test_examples =[]
     train_examples = []
@@ -28,11 +30,15 @@ for i in num_patients:
         train_examples.append(train_ex)
         train_labels.append(train_la)
 
-    #clf = linear_model.SGDClassifier()
-    #clf = LinearSVC()
-    clf = neighbors.KNeighborsClassifier(n_neighbors= 5,weights = 'distance')
+
+    #clf = linear_model.SGDClassifier(loss='log')
+    clf = SVC(C = 10, gamma = 0.00001)
+    #clf = neighbors.KNeighborsClassifier(n_neighbors= 5,weights = 'distance')
+
+
     clf.fit(train_examples,train_labels)
     predict = clf.predict(test_examples)
+    print predict
     total = len(predict)
     parkin_pos = count_nonzero(predict)
     parkin_neg = total - parkin_pos
@@ -42,6 +48,7 @@ for i in num_patients:
     else:
         result = 0
         print "Subject %d is detected with negative parkinson" %i
+
     results.append(result)
 asarray(results)
 correct_results =  count_nonzero(results)
