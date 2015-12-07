@@ -1,0 +1,338 @@
+
+Parameters under test
+gamma=0.100000	Regularization=1Accuracy=0.000000
+Parameters under test
+gamma=0.100000	Regularization=2Accuracy=0.000000
+Parameters under test
+gamma=0.100000	Regularization=5Accuracy=0.000000
+Parameters under test
+gamma=0.100000	Regularization=10Accuracy=0.000000
+Parameters under test
+gamma=0.100000	Regularization=15Accuracy=0.000000
+Parameters under test
+gamma=0.100000	Regularization=20Accuracy=0.000000
+Parameters under test
+gamma=0.100000	Regularization=25Accuracy=0.000000
+Parameters under test
+gamma=0.100000	Regularization=30Accuracy=0.000000
+Parameters under test
+gamma=0.100000	Regularization=50Accuracy=0.000000
+Parameters under test
+gamma=0.100000	Regularization=100Accuracy=0.000000
+Parameters under test
+gamma=0.100000	Regularization=200Accuracy=0.000000
+Parameters under test
+gamma=0.100000	Regularization=500Accuracy=0.000000
+Parameters under test
+gamma=0.100000	Regularization=1000Accuracy=0.000000
+Parameters under test
+gamma=0.100000	Regularization=2000Accuracy=0.000000
+Parameters under test
+gamma=0.100000	Regularization=5000Accuracy=0.000000
+Parameters under test
+gamma=0.100000	Regularization=10000Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=1Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=2Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=5Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=10Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=15Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=20Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=25Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=30Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=50Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=100Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=200Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=500Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=1000Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=2000Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=5000Accuracy=0.000000
+Parameters under test
+gamma=0.010000	Regularization=10000Accuracy=0.000000
+Parameters under test
+gamma=0.001000	Regularization=1Accuracy=45.000000
+Parameters under test
+gamma=0.001000	Regularization=2Accuracy=50.000000
+Parameters under test
+gamma=0.001000	Regularization=5Accuracy=45.000000
+Parameters under test
+gamma=0.001000	Regularization=10Accuracy=47.500000
+Parameters under test
+gamma=0.001000	Regularization=15Accuracy=50.000000
+Parameters under test
+gamma=0.001000	Regularization=20Accuracy=52.500000
+Parameters under test
+gamma=0.001000	Regularization=25Accuracy=52.500000
+Parameters under test
+gamma=0.001000	Regularization=30Accuracy=55.000000
+Parameters under test
+gamma=0.001000	Regularization=50Accuracy=52.500000
+Parameters under test
+gamma=0.001000	Regularization=100Accuracy=55.000000
+Parameters under test
+gamma=0.001000	Regularization=200Accuracy=55.000000
+Parameters under test
+gamma=0.001000	Regularization=500Accuracy=55.000000
+Parameters under test
+gamma=0.001000	Regularization=1000Accuracy=55.000000
+Parameters under test
+gamma=0.001000	Regularization=2000Accuracy=55.000000
+Parameters under test
+gamma=0.001000	Regularization=5000Accuracy=55.000000
+Parameters under test
+gamma=0.001000	Regularization=10000Accuracy=55.000000
+Parameters under test
+gamma=0.000100	Regularization=1Accuracy=52.500000
+Parameters under test
+gamma=0.000100	Regularization=2Accuracy=60.000000
+Parameters under test
+gamma=0.000100	Regularization=5Accuracy=50.000000
+Parameters under test
+gamma=0.000100	Regularization=10Accuracy=50.000000
+Parameters under test
+gamma=0.000100	Regularization=15Accuracy=55.000000
+Parameters under test
+gamma=0.000100	Regularization=20Accuracy=52.500000
+Parameters under test
+gamma=0.000100	Regularization=25Accuracy=50.000000
+Parameters under test
+gamma=0.000100	Regularization=30Accuracy=55.000000
+Parameters under test
+gamma=0.000100	Regularization=50Accuracy=57.500000
+Parameters under test
+gamma=0.000100	Regularization=100Accuracy=60.000000
+Parameters under test
+gamma=0.000100	Regularization=200Accuracy=62.500000
+Parameters under test
+gamma=0.000100	Regularization=500Accuracy=57.500000
+Parameters under test
+gamma=0.000100	Regularization=1000Accuracy=55.000000
+Parameters under test
+gamma=0.000100	Regularization=2000Accuracy=50.000000
+Parameters under test
+gamma=0.000100	Regularization=5000Accuracy=57.500000
+Parameters under test
+gamma=0.000100	Regularization=10000Accuracy=52.500000
+Parameters under test
+gamma=0.000010	Regularization=1Accuracy=45.000000
+Parameters under test
+gamma=0.000010	Regularization=2Accuracy=47.500000
+Parameters under test
+gamma=0.000010	Regularization=5Accuracy=50.000000
+Parameters under test
+gamma=0.000010	Regularization=10Accuracy=52.500000
+Parameters under test
+gamma=0.000010	Regularization=15Accuracy=50.000000
+Parameters under test
+gamma=0.000010	Regularization=20Accuracy=52.500000
+Parameters under test
+gamma=0.000010	Regularization=25Accuracy=52.500000
+Parameters under test
+gamma=0.000010	Regularization=30Accuracy=55.000000
+Parameters under test
+gamma=0.000010	Regularization=50Accuracy=55.000000
+Parameters under test
+gamma=0.000010	Regularization=100Accuracy=55.000000
+Parameters under test
+gamma=0.000010	Regularization=200Accuracy=55.000000
+Parameters under test
+gamma=0.000010	Regularization=500Accuracy=57.500000
+Parameters under test
+gamma=0.000010	Regularization=1000Accuracy=57.500000
+Parameters under test
+gamma=0.000010	Regularization=2000Accuracy=55.000000
+Parameters under test
+gamma=0.000010	Regularization=5000Accuracy=52.500000
+Parameters under test
+gamma=0.000010	Regularization=10000Accuracy=52.500000
+Parameters under test
+gamma=0.000001	Regularization=1Accuracy=55.000000
+Parameters under test
+gamma=0.000001	Regularization=2Accuracy=50.000000
+Parameters under test
+gamma=0.000001	Regularization=5Accuracy=47.500000
+Parameters under test
+gamma=0.000001	Regularization=10Accuracy=37.500000
+Parameters under test
+gamma=0.000001	Regularization=15Accuracy=40.000000
+Parameters under test
+gamma=0.000001	Regularization=20Accuracy=42.500000
+Parameters under test
+gamma=0.000001	Regularization=25Accuracy=42.500000
+Parameters under test
+gamma=0.000001	Regularization=30Accuracy=40.000000
+Parameters under test
+gamma=0.000001	Regularization=50Accuracy=42.500000
+Parameters under test
+gamma=0.000001	Regularization=100Accuracy=47.500000
+Parameters under test
+gamma=0.000001	Regularization=200Accuracy=52.500000
+Parameters under test
+gamma=0.000001	Regularization=500Accuracy=50.000000
+Parameters under test
+gamma=0.000001	Regularization=1000Accuracy=50.000000
+Parameters under test
+gamma=0.000001	Regularization=2000Accuracy=55.000000
+Parameters under test
+gamma=0.000001	Regularization=5000Accuracy=55.000000
+Parameters under test
+gamma=0.000001	Regularization=10000Accuracy=55.000000
+Parameters under test
+gamma=0.500000	Regularization=1Accuracy=0.000000
+Parameters under test
+gamma=0.500000	Regularization=2Accuracy=0.000000
+Parameters under test
+gamma=0.500000	Regularization=5Accuracy=0.000000
+Parameters under test
+gamma=0.500000	Regularization=10Accuracy=0.000000
+Parameters under test
+gamma=0.500000	Regularization=15Accuracy=0.000000
+Parameters under test
+gamma=0.500000	Regularization=20Accuracy=0.000000
+Parameters under test
+gamma=0.500000	Regularization=25Accuracy=0.000000
+Parameters under test
+gamma=0.500000	Regularization=30Accuracy=0.000000
+Parameters under test
+gamma=0.500000	Regularization=50Accuracy=0.000000
+Parameters under test
+gamma=0.500000	Regularization=100Accuracy=0.000000
+Parameters under test
+gamma=0.500000	Regularization=200Accuracy=0.000000
+Parameters under test
+gamma=0.500000	Regularization=500Accuracy=0.000000
+Parameters under test
+gamma=0.500000	Regularization=1000Accuracy=0.000000
+Parameters under test
+gamma=0.500000	Regularization=2000Accuracy=0.000000
+Parameters under test
+gamma=0.500000	Regularization=5000Accuracy=0.000000
+Parameters under test
+gamma=0.500000	Regularization=10000Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=1Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=2Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=5Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=10Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=15Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=20Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=25Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=30Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=50Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=100Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=200Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=500Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=1000Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=2000Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=5000Accuracy=0.000000
+Parameters under test
+gamma=0.050000	Regularization=10000Accuracy=0.000000
+Parameters under test
+gamma=0.005000	Regularization=1Accuracy=40.000000
+Parameters under test
+gamma=0.005000	Regularization=2Accuracy=45.000000
+Parameters under test
+gamma=0.005000	Regularization=5Accuracy=45.000000
+Parameters under test
+gamma=0.005000	Regularization=10Accuracy=45.000000
+Parameters under test
+gamma=0.005000	Regularization=15Accuracy=45.000000
+Parameters under test
+gamma=0.005000	Regularization=20Accuracy=45.000000
+Parameters under test
+gamma=0.005000	Regularization=25Accuracy=45.000000
+Parameters under test
+gamma=0.005000	Regularization=30Accuracy=45.000000
+Parameters under test
+gamma=0.005000	Regularization=50Accuracy=45.000000
+Parameters under test
+gamma=0.005000	Regularization=100Accuracy=45.000000
+Parameters under test
+gamma=0.005000	Regularization=200Accuracy=45.000000
+Parameters under test
+gamma=0.005000	Regularization=500Accuracy=45.000000
+Parameters under test
+gamma=0.005000	Regularization=1000Accuracy=45.000000
+Parameters under test
+gamma=0.005000	Regularization=2000Accuracy=45.000000
+Parameters under test
+gamma=0.005000	Regularization=5000Accuracy=45.000000
+Parameters under test
+gamma=0.005000	Regularization=10000Accuracy=45.000000
+Parameters under test
+gamma=0.000500	Regularization=1Accuracy=47.500000
+Parameters under test
+gamma=0.000500	Regularization=2Accuracy=50.000000
+Parameters under test
+gamma=0.000500	Regularization=5Accuracy=50.000000
+Parameters under test
+gamma=0.000500	Regularization=10Accuracy=50.000000
+Parameters under test
+gamma=0.000500	Regularization=15Accuracy=50.000000
+Parameters under test
+gamma=0.000500	Regularization=20Accuracy=45.000000
+Parameters under test
+gamma=0.000500	Regularization=25Accuracy=50.000000
+Parameters under test
+gamma=0.000500	Regularization=30Accuracy=50.000000
+Parameters under test
+gamma=0.000500	Regularization=50Accuracy=50.000000
+Parameters under test
+gamma=0.000500	Regularization=100Accuracy=57.500000
+Parameters under test
+gamma=0.000500	Regularization=200Accuracy=52.500000
+Parameters under test
+gamma=0.000500	Regularization=500Accuracy=50.000000
+Parameters under test
+gamma=0.000500	Regularization=1000Accuracy=50.000000
+Parameters under test
+gamma=0.000500	Regularization=2000Accuracy=50.000000
+Parameters under test
+gamma=0.000500	Regularization=5000Accuracy=50.000000
+Parameters under test
+gamma=0.000500	Regularization=10000Accuracy=50.000000
+Parameters under test
+gamma=0.000050	Regularization=1Accuracy=60.000000
+Parameters under test
+gamma=0.000050	Regularization=2Accuracy=52.500000
+Parameters under test
+gamma=0.000050	Regularization=5Accuracy=52.500000
+Parameters under test
+gamma=0.000050	Regularization=10Accuracy=55.000000
+Parameters under test
+gamma=0.000050	Regularization=15Accuracy=55.000000
+Parameters under test
+gamma=0.000050	Regularization=20Accuracy=55.000000
+Parameters under test
+gamma=0.000050	Regularization=25Accuracy=52.500000
+Parameters under test
+gamma=0.000050	Regularization=30Accuracy=50.000000
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 45.0, 50.0, 45.0, 47.5, 50.0, 52.5, 52.5, 55.000000000000014, 52.5, 55.000000000000014, 55.000000000000014, 55.000000000000014, 55.000000000000014, 55.000000000000014, 55.000000000000014, 55.000000000000014, 52.5, 60.0, 50.0, 50.0, 55.000000000000014, 52.5, 50.0, 55.000000000000014, 57.499999999999986, 60.0, 62.5, 57.499999999999986, 55.000000000000014, 50.0, 57.499999999999986, 52.5, 45.0, 47.5, 50.0, 52.5, 50.0, 52.5, 52.5, 55.000000000000014, 55.000000000000014, 55.000000000000014, 55.000000000000014, 57.499999999999986, 57.499999999999986, 55.000000000000014, 52.5, 52.5, 55.000000000000014, 50.0, 47.5, 37.5, 40.0, 42.5, 42.5, 40.0, 42.5, 47.5, 52.5, 50.0, 50.0, 55.000000000000014, 55.000000000000014, 55.000000000000014, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 40.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 45.0, 47.5, 50.0, 50.0, 50.0, 50.0, 45.0, 50.0, 50.0, 50.0, 57.499999999999986, 52.5, 50.0, 50.0, 50.0, 50.0, 50.0, 60.0, 52.5, 52.5, 55.000000000000014, 55.000000000000014, 55.000000000000014, 52.5, 50.0, 52.5, 60.0, 55.000000000000014, 60.0, 62.5, 62.5, 62.5, 50.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]

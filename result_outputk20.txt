@@ -1,0 +1,812 @@
+
+Parameters under test
+alpha =0.100000	num_iteration=5	penality=l1
+Accuracy=52.500000
+Parameters under test
+alpha =0.010000	num_iteration=5	penality=l1
+Accuracy=49.250000
+Parameters under test
+alpha =0.001000	num_iteration=5	penality=l1
+Accuracy=51.000000
+Parameters under test
+alpha =0.000100	num_iteration=5	penality=l1
+Accuracy=50.125000
+Parameters under test
+alpha =0.000010	num_iteration=5	penality=l1
+Accuracy=50.125000
+Parameters under test
+alpha =0.500000	num_iteration=5	penality=l1
+Accuracy=50.000000
+Parameters under test
+alpha =0.050000	num_iteration=5	penality=l1
+Accuracy=51.875000
+Parameters under test
+alpha =0.005000	num_iteration=5	penality=l1
+Accuracy=52.875000
+Parameters under test
+alpha =0.000500	num_iteration=5	penality=l1
+Accuracy=50.375000
+Parameters under test
+alpha =0.000050	num_iteration=5	penality=l1
+Accuracy=48.625000
+Parameters under test
+alpha =0.100000	num_iteration=5	penality=l2
+Accuracy=49.250000
+Parameters under test
+alpha =0.010000	num_iteration=5	penality=l2
+Accuracy=49.125000
+Parameters under test
+alpha =0.001000	num_iteration=5	penality=l2
+Accuracy=49.375000
+Parameters under test
+alpha =0.000100	num_iteration=5	penality=l2
+Accuracy=51.375000
+Parameters under test
+alpha =0.000010	num_iteration=5	penality=l2
+Accuracy=53.250000
+Parameters under test
+alpha =0.500000	num_iteration=5	penality=l2
+Accuracy=47.750000
+Parameters under test
+alpha =0.050000	num_iteration=5	penality=l2
+Accuracy=51.125000
+Parameters under test
+alpha =0.005000	num_iteration=5	penality=l2
+Accuracy=48.125000
+Parameters under test
+alpha =0.000500	num_iteration=5	penality=l2
+Accuracy=50.500000
+Parameters under test
+alpha =0.000050	num_iteration=5	penality=l2
+Accuracy=46.000000
+Parameters under test
+alpha =0.100000	num_iteration=5	penality=elasticnet
+Accuracy=49.000000
+Parameters under test
+alpha =0.010000	num_iteration=5	penality=elasticnet
+Accuracy=49.000000
+Parameters under test
+alpha =0.001000	num_iteration=5	penality=elasticnet
+Accuracy=46.250000
+Parameters under test
+alpha =0.000100	num_iteration=5	penality=elasticnet
+Accuracy=49.875000
+Parameters under test
+alpha =0.000010	num_iteration=5	penality=elasticnet
+Accuracy=48.500000
+Parameters under test
+alpha =0.500000	num_iteration=5	penality=elasticnet
+Accuracy=55.125000
+Parameters under test
+alpha =0.050000	num_iteration=5	penality=elasticnet
+Accuracy=50.750000
+Parameters under test
+alpha =0.005000	num_iteration=5	penality=elasticnet
+Accuracy=49.625000
+Parameters under test
+alpha =0.000500	num_iteration=5	penality=elasticnet
+Accuracy=52.250000
+Parameters under test
+alpha =0.000050	num_iteration=5	penality=elasticnet
+Accuracy=47.375000
+Parameters under test
+alpha =0.100000	num_iteration=10	penality=l1
+Accuracy=55.625000
+Parameters under test
+alpha =0.010000	num_iteration=10	penality=l1
+Accuracy=50.625000
+Parameters under test
+alpha =0.001000	num_iteration=10	penality=l1
+Accuracy=50.625000
+Parameters under test
+alpha =0.000100	num_iteration=10	penality=l1
+Accuracy=49.875000
+Parameters under test
+alpha =0.000010	num_iteration=10	penality=l1
+Accuracy=48.125000
+Parameters under test
+alpha =0.500000	num_iteration=10	penality=l1
+Accuracy=50.750000
+Parameters under test
+alpha =0.050000	num_iteration=10	penality=l1
+Accuracy=51.375000
+Parameters under test
+alpha =0.005000	num_iteration=10	penality=l1
+Accuracy=49.500000
+Parameters under test
+alpha =0.000500	num_iteration=10	penality=l1
+Accuracy=50.875000
+Parameters under test
+alpha =0.000050	num_iteration=10	penality=l1
+Accuracy=53.375000
+Parameters under test
+alpha =0.100000	num_iteration=10	penality=l2
+Accuracy=50.500000
+Parameters under test
+alpha =0.010000	num_iteration=10	penality=l2
+Accuracy=54.125000
+Parameters under test
+alpha =0.001000	num_iteration=10	penality=l2
+Accuracy=49.750000
+Parameters under test
+alpha =0.000100	num_iteration=10	penality=l2
+Accuracy=53.250000
+Parameters under test
+alpha =0.000010	num_iteration=10	penality=l2
+Accuracy=48.500000
+Parameters under test
+alpha =0.500000	num_iteration=10	penality=l2
+Accuracy=51.500000
+Parameters under test
+alpha =0.050000	num_iteration=10	penality=l2
+Accuracy=48.250000
+Parameters under test
+alpha =0.005000	num_iteration=10	penality=l2
+Accuracy=49.750000
+Parameters under test
+alpha =0.000500	num_iteration=10	penality=l2
+Accuracy=52.750000
+Parameters under test
+alpha =0.000050	num_iteration=10	penality=l2
+Accuracy=50.125000
+Parameters under test
+alpha =0.100000	num_iteration=10	penality=elasticnet
+Accuracy=49.250000
+Parameters under test
+alpha =0.010000	num_iteration=10	penality=elasticnet
+Accuracy=48.625000
+Parameters under test
+alpha =0.001000	num_iteration=10	penality=elasticnet
+Accuracy=52.375000
+Parameters under test
+alpha =0.000100	num_iteration=10	penality=elasticnet
+Accuracy=48.125000
+Parameters under test
+alpha =0.000010	num_iteration=10	penality=elasticnet
+Accuracy=47.500000
+Parameters under test
+alpha =0.500000	num_iteration=10	penality=elasticnet
+Accuracy=52.375000
+Parameters under test
+alpha =0.050000	num_iteration=10	penality=elasticnet
+Accuracy=51.750000
+Parameters under test
+alpha =0.005000	num_iteration=10	penality=elasticnet
+Accuracy=49.375000
+Parameters under test
+alpha =0.000500	num_iteration=10	penality=elasticnet
+Accuracy=50.875000
+Parameters under test
+alpha =0.000050	num_iteration=10	penality=elasticnet
+Accuracy=48.875000
+Parameters under test
+alpha =0.100000	num_iteration=15	penality=l1
+Accuracy=51.625000
+Parameters under test
+alpha =0.010000	num_iteration=15	penality=l1
+Accuracy=54.125000
+Parameters under test
+alpha =0.001000	num_iteration=15	penality=l1
+Accuracy=54.250000
+Parameters under test
+alpha =0.000100	num_iteration=15	penality=l1
+Accuracy=51.375000
+Parameters under test
+alpha =0.000010	num_iteration=15	penality=l1
+Accuracy=50.500000
+Parameters under test
+alpha =0.500000	num_iteration=15	penality=l1
+Accuracy=47.500000
+Parameters under test
+alpha =0.050000	num_iteration=15	penality=l1
+Accuracy=52.875000
+Parameters under test
+alpha =0.005000	num_iteration=15	penality=l1
+Accuracy=53.625000
+Parameters under test
+alpha =0.000500	num_iteration=15	penality=l1
+Accuracy=52.250000
+Parameters under test
+alpha =0.000050	num_iteration=15	penality=l1
+Accuracy=53.750000
+Parameters under test
+alpha =0.100000	num_iteration=15	penality=l2
+Accuracy=49.500000
+Parameters under test
+alpha =0.010000	num_iteration=15	penality=l2
+Accuracy=49.250000
+Parameters under test
+alpha =0.001000	num_iteration=15	penality=l2
+Accuracy=49.125000
+Parameters under test
+alpha =0.000100	num_iteration=15	penality=l2
+Accuracy=50.375000
+Parameters under test
+alpha =0.000010	num_iteration=15	penality=l2
+Accuracy=49.750000
+Parameters under test
+alpha =0.500000	num_iteration=15	penality=l2
+Accuracy=49.875000
+Parameters under test
+alpha =0.050000	num_iteration=15	penality=l2
+Accuracy=51.250000
+Parameters under test
+alpha =0.005000	num_iteration=15	penality=l2
+Accuracy=51.125000
+Parameters under test
+alpha =0.000500	num_iteration=15	penality=l2
+Accuracy=52.375000
+Parameters under test
+alpha =0.000050	num_iteration=15	penality=l2
+Accuracy=51.750000
+Parameters under test
+alpha =0.100000	num_iteration=15	penality=elasticnet
+Accuracy=49.500000
+Parameters under test
+alpha =0.010000	num_iteration=15	penality=elasticnet
+Accuracy=50.375000
+Parameters under test
+alpha =0.001000	num_iteration=15	penality=elasticnet
+Accuracy=50.875000
+Parameters under test
+alpha =0.000100	num_iteration=15	penality=elasticnet
+Accuracy=51.500000
+Parameters under test
+alpha =0.000010	num_iteration=15	penality=elasticnet
+Accuracy=49.375000
+Parameters under test
+alpha =0.500000	num_iteration=15	penality=elasticnet
+Accuracy=50.250000
+Parameters under test
+alpha =0.050000	num_iteration=15	penality=elasticnet
+Accuracy=48.375000
+Parameters under test
+alpha =0.005000	num_iteration=15	penality=elasticnet
+Accuracy=49.375000
+Parameters under test
+alpha =0.000500	num_iteration=15	penality=elasticnet
+Accuracy=48.625000
+Parameters under test
+alpha =0.000050	num_iteration=15	penality=elasticnet
+Accuracy=50.875000
+Parameters under test
+alpha =0.100000	num_iteration=20	penality=l1
+Accuracy=50.750000
+Parameters under test
+alpha =0.010000	num_iteration=20	penality=l1
+Accuracy=51.125000
+Parameters under test
+alpha =0.001000	num_iteration=20	penality=l1
+Accuracy=54.250000
+Parameters under test
+alpha =0.000100	num_iteration=20	penality=l1
+Accuracy=51.125000
+Parameters under test
+alpha =0.000010	num_iteration=20	penality=l1
+Accuracy=50.375000
+Parameters under test
+alpha =0.500000	num_iteration=20	penality=l1
+Accuracy=49.250000
+Parameters under test
+alpha =0.050000	num_iteration=20	penality=l1
+Accuracy=54.000000
+Parameters under test
+alpha =0.005000	num_iteration=20	penality=l1
+Accuracy=54.375000
+Parameters under test
+alpha =0.000500	num_iteration=20	penality=l1
+Accuracy=52.125000
+Parameters under test
+alpha =0.000050	num_iteration=20	penality=l1
+Accuracy=52.250000
+Parameters under test
+alpha =0.100000	num_iteration=20	penality=l2
+Accuracy=50.875000
+Parameters under test
+alpha =0.010000	num_iteration=20	penality=l2
+Accuracy=53.375000
+Parameters under test
+alpha =0.001000	num_iteration=20	penality=l2
+Accuracy=51.000000
+Parameters under test
+alpha =0.000100	num_iteration=20	penality=l2
+Accuracy=49.750000
+Parameters under test
+alpha =0.000010	num_iteration=20	penality=l2
+Accuracy=51.500000
+Parameters under test
+alpha =0.500000	num_iteration=20	penality=l2
+Accuracy=47.875000
+Parameters under test
+alpha =0.050000	num_iteration=20	penality=l2
+Accuracy=48.500000
+Parameters under test
+alpha =0.005000	num_iteration=20	penality=l2
+Accuracy=49.625000
+Parameters under test
+alpha =0.000500	num_iteration=20	penality=l2
+Accuracy=49.500000
+Parameters under test
+alpha =0.000050	num_iteration=20	penality=l2
+Accuracy=51.875000
+Parameters under test
+alpha =0.100000	num_iteration=20	penality=elasticnet
+Accuracy=53.375000
+Parameters under test
+alpha =0.010000	num_iteration=20	penality=elasticnet
+Accuracy=50.000000
+Parameters under test
+alpha =0.001000	num_iteration=20	penality=elasticnet
+Accuracy=54.750000
+Parameters under test
+alpha =0.000100	num_iteration=20	penality=elasticnet
+Accuracy=51.250000
+Parameters under test
+alpha =0.000010	num_iteration=20	penality=elasticnet
+Accuracy=51.875000
+Parameters under test
+alpha =0.500000	num_iteration=20	penality=elasticnet
+Accuracy=47.750000
+Parameters under test
+alpha =0.050000	num_iteration=20	penality=elasticnet
+Accuracy=48.750000
+Parameters under test
+alpha =0.005000	num_iteration=20	penality=elasticnet
+Accuracy=47.250000
+Parameters under test
+alpha =0.000500	num_iteration=20	penality=elasticnet
+Accuracy=49.500000
+Parameters under test
+alpha =0.000050	num_iteration=20	penality=elasticnet
+Accuracy=48.375000
+Parameters under test
+alpha =0.100000	num_iteration=25	penality=l1
+Accuracy=52.875000
+Parameters under test
+alpha =0.010000	num_iteration=25	penality=l1
+Accuracy=55.500000
+Parameters under test
+alpha =0.001000	num_iteration=25	penality=l1
+Accuracy=53.375000
+Parameters under test
+alpha =0.000100	num_iteration=25	penality=l1
+Accuracy=50.500000
+Parameters under test
+alpha =0.000010	num_iteration=25	penality=l1
+Accuracy=48.000000
+Parameters under test
+alpha =0.500000	num_iteration=25	penality=l1
+Accuracy=48.250000
+Parameters under test
+alpha =0.050000	num_iteration=25	penality=l1
+Accuracy=52.625000
+Parameters under test
+alpha =0.005000	num_iteration=25	penality=l1
+Accuracy=54.250000
+Parameters under test
+alpha =0.000500	num_iteration=25	penality=l1
+Accuracy=51.000000
+Parameters under test
+alpha =0.000050	num_iteration=25	penality=l1
+Accuracy=50.375000
+Parameters under test
+alpha =0.100000	num_iteration=25	penality=l2
+Accuracy=51.875000
+Parameters under test
+alpha =0.010000	num_iteration=25	penality=l2
+Accuracy=48.875000
+Parameters under test
+alpha =0.001000	num_iteration=25	penality=l2
+Accuracy=51.125000
+Parameters under test
+alpha =0.000100	num_iteration=25	penality=l2
+Accuracy=50.250000
+Parameters under test
+alpha =0.000010	num_iteration=25	penality=l2
+Accuracy=52.625000
+Parameters under test
+alpha =0.500000	num_iteration=25	penality=l2
+Accuracy=52.375000
+Parameters under test
+alpha =0.050000	num_iteration=25	penality=l2
+Accuracy=48.750000
+Parameters under test
+alpha =0.005000	num_iteration=25	penality=l2
+Accuracy=53.250000
+Parameters under test
+alpha =0.000500	num_iteration=25	penality=l2
+Accuracy=49.750000
+Parameters under test
+alpha =0.000050	num_iteration=25	penality=l2
+Accuracy=49.625000
+Parameters under test
+alpha =0.100000	num_iteration=25	penality=elasticnet
+Accuracy=52.125000
+Parameters under test
+alpha =0.010000	num_iteration=25	penality=elasticnet
+Accuracy=50.250000
+Parameters under test
+alpha =0.001000	num_iteration=25	penality=elasticnet
+Accuracy=51.750000
+Parameters under test
+alpha =0.000100	num_iteration=25	penality=elasticnet
+Accuracy=51.000000
+Parameters under test
+alpha =0.000010	num_iteration=25	penality=elasticnet
+Accuracy=50.500000
+Parameters under test
+alpha =0.500000	num_iteration=25	penality=elasticnet
+Accuracy=50.000000
+Parameters under test
+alpha =0.050000	num_iteration=25	penality=elasticnet
+Accuracy=50.125000
+Parameters under test
+alpha =0.005000	num_iteration=25	penality=elasticnet
+Accuracy=49.125000
+Parameters under test
+alpha =0.000500	num_iteration=25	penality=elasticnet
+Accuracy=48.625000
+Parameters under test
+alpha =0.000050	num_iteration=25	penality=elasticnet
+Accuracy=51.375000
+Parameters under test
+alpha =0.100000	num_iteration=30	penality=l1
+Accuracy=55.375000
+Parameters under test
+alpha =0.010000	num_iteration=30	penality=l1
+Accuracy=51.625000
+Parameters under test
+alpha =0.001000	num_iteration=30	penality=l1
+Accuracy=53.125000
+Parameters under test
+alpha =0.000100	num_iteration=30	penality=l1
+Accuracy=54.125000
+Parameters under test
+alpha =0.000010	num_iteration=30	penality=l1
+Accuracy=50.750000
+Parameters under test
+alpha =0.500000	num_iteration=30	penality=l1
+Accuracy=46.000000
+Parameters under test
+alpha =0.050000	num_iteration=30	penality=l1
+Accuracy=52.625000
+Parameters under test
+alpha =0.005000	num_iteration=30	penality=l1
+Accuracy=52.125000
+Parameters under test
+alpha =0.000500	num_iteration=30	penality=l1
+Accuracy=51.000000
+Parameters under test
+alpha =0.000050	num_iteration=30	penality=l1
+Accuracy=53.375000
+Parameters under test
+alpha =0.100000	num_iteration=30	penality=l2
+Accuracy=50.375000
+Parameters under test
+alpha =0.010000	num_iteration=30	penality=l2
+Accuracy=51.625000
+Parameters under test
+alpha =0.001000	num_iteration=30	penality=l2
+Accuracy=52.500000
+Parameters under test
+alpha =0.000100	num_iteration=30	penality=l2
+Accuracy=49.500000
+Parameters under test
+alpha =0.000010	num_iteration=30	penality=l2
+Accuracy=50.250000
+Parameters under test
+alpha =0.500000	num_iteration=30	penality=l2
+Accuracy=50.375000
+Parameters under test
+alpha =0.050000	num_iteration=30	penality=l2
+Accuracy=53.000000
+Parameters under test
+alpha =0.005000	num_iteration=30	penality=l2
+Accuracy=48.250000
+Parameters under test
+alpha =0.000500	num_iteration=30	penality=l2
+Accuracy=52.875000
+Parameters under test
+alpha =0.000050	num_iteration=30	penality=l2
+Accuracy=48.625000
+Parameters under test
+alpha =0.100000	num_iteration=30	penality=elasticnet
+Accuracy=52.500000
+Parameters under test
+alpha =0.010000	num_iteration=30	penality=elasticnet
+Accuracy=52.250000
+Parameters under test
+alpha =0.001000	num_iteration=30	penality=elasticnet
+Accuracy=53.125000
+Parameters under test
+alpha =0.000100	num_iteration=30	penality=elasticnet
+Accuracy=51.750000
+Parameters under test
+alpha =0.000010	num_iteration=30	penality=elasticnet
+Accuracy=49.875000
+Parameters under test
+alpha =0.500000	num_iteration=30	penality=elasticnet
+Accuracy=48.500000
+Parameters under test
+alpha =0.050000	num_iteration=30	penality=elasticnet
+Accuracy=50.125000
+Parameters under test
+alpha =0.005000	num_iteration=30	penality=elasticnet
+Accuracy=51.500000
+Parameters under test
+alpha =0.000500	num_iteration=30	penality=elasticnet
+Accuracy=53.125000
+Parameters under test
+alpha =0.000050	num_iteration=30	penality=elasticnet
+Accuracy=50.125000
+Parameters under test
+alpha =0.100000	num_iteration=40	penality=l1
+Accuracy=55.625000
+Parameters under test
+alpha =0.010000	num_iteration=40	penality=l1
+Accuracy=52.125000
+Parameters under test
+alpha =0.001000	num_iteration=40	penality=l1
+Accuracy=52.250000
+Parameters under test
+alpha =0.000100	num_iteration=40	penality=l1
+Accuracy=52.625000
+Parameters under test
+alpha =0.000010	num_iteration=40	penality=l1
+Accuracy=52.875000
+Parameters under test
+alpha =0.500000	num_iteration=40	penality=l1
+Accuracy=48.375000
+Parameters under test
+alpha =0.050000	num_iteration=40	penality=l1
+Accuracy=53.625000
+Parameters under test
+alpha =0.005000	num_iteration=40	penality=l1
+Accuracy=54.125000
+Parameters under test
+alpha =0.000500	num_iteration=40	penality=l1
+Accuracy=53.375000
+Parameters under test
+alpha =0.000050	num_iteration=40	penality=l1
+Accuracy=51.500000
+Parameters under test
+alpha =0.100000	num_iteration=40	penality=l2
+Accuracy=49.250000
+Parameters under test
+alpha =0.010000	num_iteration=40	penality=l2
+Accuracy=52.875000
+Parameters under test
+alpha =0.001000	num_iteration=40	penality=l2
+Accuracy=50.750000
+Parameters under test
+alpha =0.000100	num_iteration=40	penality=l2
+Accuracy=51.750000
+Parameters under test
+alpha =0.000010	num_iteration=40	penality=l2
+Accuracy=50.250000
+Parameters under test
+alpha =0.500000	num_iteration=40	penality=l2
+Accuracy=54.750000
+Parameters under test
+alpha =0.050000	num_iteration=40	penality=l2
+Accuracy=51.000000
+Parameters under test
+alpha =0.005000	num_iteration=40	penality=l2
+Accuracy=48.875000
+Parameters under test
+alpha =0.000500	num_iteration=40	penality=l2
+Accuracy=50.875000
+Parameters under test
+alpha =0.000050	num_iteration=40	penality=l2
+Accuracy=49.625000
+Parameters under test
+alpha =0.100000	num_iteration=40	penality=elasticnet
+Accuracy=50.750000
+Parameters under test
+alpha =0.010000	num_iteration=40	penality=elasticnet
+Accuracy=52.750000
+Parameters under test
+alpha =0.001000	num_iteration=40	penality=elasticnet
+Accuracy=53.125000
+Parameters under test
+alpha =0.000100	num_iteration=40	penality=elasticnet
+Accuracy=50.750000
+Parameters under test
+alpha =0.000010	num_iteration=40	penality=elasticnet
+Accuracy=52.750000
+Parameters under test
+alpha =0.500000	num_iteration=40	penality=elasticnet
+Accuracy=51.500000
+Parameters under test
+alpha =0.050000	num_iteration=40	penality=elasticnet
+Accuracy=50.375000
+Parameters under test
+alpha =0.005000	num_iteration=40	penality=elasticnet
+Accuracy=50.375000
+Parameters under test
+alpha =0.000500	num_iteration=40	penality=elasticnet
+Accuracy=51.750000
+Parameters under test
+alpha =0.000050	num_iteration=40	penality=elasticnet
+Accuracy=51.375000
+Parameters under test
+alpha =0.100000	num_iteration=50	penality=l1
+Accuracy=51.000000
+Parameters under test
+alpha =0.010000	num_iteration=50	penality=l1
+Accuracy=55.875000
+Parameters under test
+alpha =0.001000	num_iteration=50	penality=l1
+Accuracy=55.250000
+Parameters under test
+alpha =0.000100	num_iteration=50	penality=l1
+Accuracy=53.375000
+Parameters under test
+alpha =0.000010	num_iteration=50	penality=l1
+Accuracy=50.500000
+Parameters under test
+alpha =0.500000	num_iteration=50	penality=l1
+Accuracy=47.875000
+Parameters under test
+alpha =0.050000	num_iteration=50	penality=l1
+Accuracy=55.375000
+Parameters under test
+alpha =0.005000	num_iteration=50	penality=l1
+Accuracy=56.500000
+Parameters under test
+alpha =0.000500	num_iteration=50	penality=l1
+Accuracy=55.250000
+Parameters under test
+alpha =0.000050	num_iteration=50	penality=l1
+Accuracy=54.125000
+Parameters under test
+alpha =0.100000	num_iteration=50	penality=l2
+Accuracy=53.375000
+Parameters under test
+alpha =0.010000	num_iteration=50	penality=l2
+Accuracy=51.000000
+Parameters under test
+alpha =0.001000	num_iteration=50	penality=l2
+Accuracy=51.875000
+Parameters under test
+alpha =0.000100	num_iteration=50	penality=l2
+Accuracy=50.375000
+Parameters under test
+alpha =0.000010	num_iteration=50	penality=l2
+Accuracy=52.000000
+Parameters under test
+alpha =0.500000	num_iteration=50	penality=l2
+Accuracy=50.250000
+Parameters under test
+alpha =0.050000	num_iteration=50	penality=l2
+Accuracy=52.125000
+Parameters under test
+alpha =0.005000	num_iteration=50	penality=l2
+Accuracy=52.375000
+Parameters under test
+alpha =0.000500	num_iteration=50	penality=l2
+Accuracy=51.375000
+Parameters under test
+alpha =0.000050	num_iteration=50	penality=l2
+Accuracy=49.500000
+Parameters under test
+alpha =0.100000	num_iteration=50	penality=elasticnet
+Accuracy=49.375000
+Parameters under test
+alpha =0.010000	num_iteration=50	penality=elasticnet
+Accuracy=52.000000
+Parameters under test
+alpha =0.001000	num_iteration=50	penality=elasticnet
+Accuracy=50.750000
+Parameters under test
+alpha =0.000100	num_iteration=50	penality=elasticnet
+Accuracy=50.625000
+Parameters under test
+alpha =0.000010	num_iteration=50	penality=elasticnet
+Accuracy=48.125000
+Parameters under test
+alpha =0.500000	num_iteration=50	penality=elasticnet
+Accuracy=45.875000
+Parameters under test
+alpha =0.050000	num_iteration=50	penality=elasticnet
+Accuracy=52.875000
+Parameters under test
+alpha =0.005000	num_iteration=50	penality=elasticnet
+Accuracy=50.000000
+Parameters under test
+alpha =0.000500	num_iteration=50	penality=elasticnet
+Accuracy=49.375000
+Parameters under test
+alpha =0.000050	num_iteration=50	penality=elasticnet
+Accuracy=48.750000
+Parameters under test
+alpha =0.100000	num_iteration=100	penality=l1
+Accuracy=55.500000
+Parameters under test
+alpha =0.010000	num_iteration=100	penality=l1
+Accuracy=53.750000
+Parameters under test
+alpha =0.001000	num_iteration=100	penality=l1
+Accuracy=54.500000
+Parameters under test
+alpha =0.000100	num_iteration=100	penality=l1
+Accuracy=51.625000
+Parameters under test
+alpha =0.000010	num_iteration=100	penality=l1
+Accuracy=51.750000
+Parameters under test
+alpha =0.500000	num_iteration=100	penality=l1
+Accuracy=48.625000
+Parameters under test
+alpha =0.050000	num_iteration=100	penality=l1
+Accuracy=56.750000
+Parameters under test
+alpha =0.005000	num_iteration=100	penality=l1
+Accuracy=56.125000
+Parameters under test
+alpha =0.000500	num_iteration=100	penality=l1
+Accuracy=55.000000
+Parameters under test
+alpha =0.000050	num_iteration=100	penality=l1
+Accuracy=52.000000
+Parameters under test
+alpha =0.100000	num_iteration=100	penality=l2
+Accuracy=51.625000
+Parameters under test
+alpha =0.010000	num_iteration=100	penality=l2
+Accuracy=48.625000
+Parameters under test
+alpha =0.001000	num_iteration=100	penality=l2
+Accuracy=50.375000
+Parameters under test
+alpha =0.000100	num_iteration=100	penality=l2
+Accuracy=49.250000
+Parameters under test
+alpha =0.000010	num_iteration=100	penality=l2
+Accuracy=50.375000
+Parameters under test
+alpha =0.500000	num_iteration=100	penality=l2
+Accuracy=51.875000
+Parameters under test
+alpha =0.050000	num_iteration=100	penality=l2
+Accuracy=49.875000
+Parameters under test
+alpha =0.005000	num_iteration=100	penality=l2
+Accuracy=50.750000
+Parameters under test
+alpha =0.000500	num_iteration=100	penality=l2
+Accuracy=48.750000
+Parameters under test
+alpha =0.000050	num_iteration=100	penality=l2
+Accuracy=52.500000
+Parameters under test
+alpha =0.100000	num_iteration=100	penality=elasticnet
+Accuracy=50.375000
+Parameters under test
+alpha =0.010000	num_iteration=100	penality=elasticnet
+Accuracy=49.125000
+Parameters under test
+alpha =0.001000	num_iteration=100	penality=elasticnet
+Accuracy=50.750000
+Parameters under test
+alpha =0.000100	num_iteration=100	penality=elasticnet
+Accuracy=48.500000
+Parameters under test
+alpha =0.000010	num_iteration=100	penality=elasticnet
+Accuracy=50.375000
+Parameters under test
+alpha =0.500000	num_iteration=100	penality=elasticnet
+Accuracy=50.125000
+Parameters under test
+alpha =0.050000	num_iteration=100	penality=elasticnet
+Accuracy=51.250000
+Parameters under test
+alpha =0.005000	num_iteration=100	penality=elasticnet
+Accuracy=51.250000
+Parameters under test
+alpha =0.000500	num_iteration=100	penality=elasticnet
+Accuracy=51.750000
+Parameters under test
+alpha =0.000050	num_iteration=100	penality=elasticnet
+Accuracy=48.875000The final list of tested parameters is
+56.750000	56.500000	56.125000	55.875000	55.625000	55.625000	55.500000	55.500000	55.375000	55.375000	55.250000	55.250000	55.125000	55.000000	54.750000	54.750000	54.500000	54.375000	54.250000	54.250000	54.250000	54.125000	54.125000	54.125000	54.125000	54.125000	54.000000	53.750000	53.750000	53.625000	53.625000	53.375000	53.375000	53.375000	53.375000	53.375000	53.375000	53.375000	53.375000	53.250000	53.250000	53.250000	53.125000	53.125000	53.125000	53.125000	53.000000	52.875000	52.875000	52.875000	52.875000	52.875000	52.875000	52.875000	52.750000	52.750000	52.750000	52.625000	52.625000	52.625000	52.625000	52.500000	52.500000	52.500000	52.500000	52.375000	52.375000	52.375000	52.375000	52.375000	52.250000	52.250000	52.250000	52.250000	52.250000	52.125000	52.125000	52.125000	52.125000	52.125000	52.000000	52.000000	52.000000	51.875000	51.875000	51.875000	51.875000	51.875000	51.875000	51.750000	51.750000	51.750000	51.750000	51.750000	51.750000	51.750000	51.750000	51.625000	51.625000	51.625000	51.625000	51.625000	51.500000	51.500000	51.500000	51.500000	51.500000	51.500000	51.375000	51.375000	51.375000	51.375000	51.375000	51.375000	51.250000	51.250000	51.250000	51.250000	51.125000	51.125000	51.125000	51.125000	51.125000	51.000000	51.000000	51.000000	51.000000	51.000000	51.000000	51.000000	51.000000	50.875000	50.875000	50.875000	50.875000	50.875000	50.875000	50.750000	50.750000	50.750000	50.750000	50.750000	50.750000	50.750000	50.750000	50.750000	50.750000	50.625000	50.625000	50.625000	50.500000	50.500000	50.500000	50.500000	50.500000	50.500000	50.375000	50.375000	50.375000	50.375000	50.375000	50.375000	50.375000	50.375000	50.375000	50.375000	50.375000	50.375000	50.375000	50.375000	50.250000	50.250000	50.250000	50.250000	50.250000	50.250000	50.125000	50.125000	50.125000	50.125000	50.125000	50.125000	50.125000	50.000000	50.000000	50.000000	50.000000	49.875000	49.875000	49.875000	49.875000	49.875000	49.750000	49.750000	49.750000	49.750000	49.750000	49.625000	49.625000	49.625000	49.625000	49.500000	49.500000	49.500000	49.500000	49.500000	49.500000	49.500000	49.375000	49.375000	49.375000	49.375000	49.375000	49.375000	49.250000	49.250000	49.250000	49.250000	49.250000	49.250000	49.250000	49.125000	49.125000	49.125000	49.125000	49.000000	49.000000	48.875000	48.875000	48.875000	48.875000	48.750000	48.750000	48.750000	48.750000	48.625000	48.625000	48.625000	48.625000	48.625000	48.625000	48.625000	48.500000	48.500000	48.500000	48.500000	48.500000	48.375000	48.375000	48.375000	48.250000	48.250000	48.250000	48.125000	48.125000	48.125000	48.125000	48.000000	47.875000	47.875000	47.750000	47.750000	47.500000	47.500000	47.375000	47.250000	46.250000	46.000000	46.000000	45.875000	
