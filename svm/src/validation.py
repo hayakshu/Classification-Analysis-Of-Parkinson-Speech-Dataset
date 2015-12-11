@@ -73,8 +73,8 @@ def rbf(X, Y):
 
 # Cross Validation for pca
 # File path for training set - preprocessed via PCA and not
-trainName = "../dataset/pca_train.csv"
-trainPatientTypeName = "../dataset/train_patientType.csv"
+trainName = "../dataset/pca/train.csv"
+trainPatientTypeName = "../dataset/patient_type/train.csv"
 
 # Load data from files by converting to Pandas DataFrame
 trainData = pd.read_csv(trainName)
@@ -91,7 +91,7 @@ linear(trainData, trainPatientType)
 rbf(trainData, trainPatientType)
 
 # Cross Validation on Non PCA Method
-trainName = "../dataset/train.csv"
+trainName = "../dataset/pandas/train.csv"
 
 # Remove header and patient index numbers from Pandas DataFrame
 # and convert to Numpy Array

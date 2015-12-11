@@ -5,6 +5,6 @@ from pca import *
 # ---------------------------------------------- #
 
 # Filepath to SLOO Data
-trainName = "../dataset/second_dataset_train.csv"
-testName = "../dataset/second_dataset_test.csv"
+trainName = "../../dataset/sloo/train.csv"
+testName = "../../dataset/sloo/test.csv"
 pca(trainName, testName)

@@ -26,8 +26,8 @@ def pca(trainName, testName):
 	print("Saving PCA Data to csv")
 	trainData_pca = pd.DataFrame(trainData_pca)
 	testData_pca = pd.DataFrame(testData_pca)
-	trainData_pca.to_csv("../dataset/pca_train.csv")
-	testData_pca.to_csv("../dataset/pca_test.csv")
+	trainData_pca.to_csv("../../dataset/pca/train.csv")
+	testData_pca.to_csv("../../dataset/pca/test.csv")
 
 
 

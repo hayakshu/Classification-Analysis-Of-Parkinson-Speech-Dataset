@@ -17,8 +17,8 @@ def csv_to_pandas(trainName, testName):
 	print("Saving CSV to Pandas CSV........")
 	trainData = pd.DataFrame(trainData)
 	testData = pd.DataFrame(testData)
-	trainData.to_csv("../dataset/train.csv")
-	testData.to_csv("../dataset/test.csv")
+	trainData.to_csv("../../dataset/pandas/train.csv")
+	testData.to_csv("../../dataset/pandas/test.csv")
 	print("Done Save!")
 
 # Convert txt to pandas csv
@@ -27,8 +27,8 @@ def data_to_pandas(train_results=None, test_results=None):
 	print("Saving Python Data to CSV File..........")
 	train_results = pd.DataFrame(train_results)
 	test_results = pd.DataFrame(test_results)
-	train_results.to_csv("../dataset/train_patientType.csv")
-	test_results.to_csv("../dataset/test_patientType.csv")
+	train_results.to_csv("../../dataset/patient_type/train.csv")
+	test_results.to_csv("../../dataset/patient_type/test.csv")
 	print("Done Save!")
 
 # Extracting Parkinson's assesment results from training and testing

@@ -9,8 +9,8 @@ from utility import *
 
 print("Obtaining Parkinsons Classification Results")
 # Load raw dataset
-trainName = "../dataset/train_data.txt"
-testName = "../dataset/test_data.txt"
+trainName = "../../dataset/raw/train.txt"
+testName = "../../dataset/raw/test.txt"
 trainData = loadtxt(trainName, delimiter=",")
 testData = loadtxt(testName, delimiter=",")
 
@@ -31,8 +31,8 @@ data_to_pandas(train_results, test_results)
 
 print("Converting SLOO DATA to PANDAS CSV")
 # Filepath to SLOO Data
-trainName = "../dataset/second_dataset_train.csv"
-testName = "../dataset/second_dataset_test.csv"
+trainName = "../../dataset/sloo/train.csv"
+testName = "../../dataset/sloo/test.csv"
 
 # Conversion process
 csv_to_pandas(trainName, testName)
