@@ -3,3 +3,4 @@
 *.pyc
 *.db
 mystuff/
+backupsvm.py
