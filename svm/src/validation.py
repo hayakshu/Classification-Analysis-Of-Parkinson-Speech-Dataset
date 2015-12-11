@@ -15,11 +15,11 @@ def linear(X, Y):
 
 	C = [1,2,5,10,15,20,25,30,50,100,200,500,1000,2000,5000,10000]
 	dataLength = len(X)
-	print dataLength
+	
 	loo = LeaveOneOut(dataLength)
 	avg_Accuracy = dict()
 	for c in C:
-		print "Performing Cross Validation on Penalty: {}".format(c)
+		#print "Performing Cross Validation on Penalty: {}".format(c)
 		predictions = []
 		expected = []
 		TP, FN, TN, FP = 0, 0, 0, 0
@@ -31,12 +31,12 @@ def linear(X, Y):
 			clf = SVC(C=c, kernel='linear')
 			clf.fit(X_train, Y_train)
 			prediction = clf.predict(X_test)[0]
-			print("Prediction: {}".format(prediction))
-			print("Expected Result: {}".format(Y_test))
+			#print("Prediction: {}".format(prediction))
+			#print("Expected Result: {}".format(Y_test))
 			predictions.append(prediction)
 			expected.append(Y_test)
 
-		print("Calculating Accuracy of Prediction")
+		#print("Calculating Accuracy of Prediction")
 		for i, prediction in enumerate(predictions):
 			if(prediction == 1 and expected[i] == 1):
 				TP += 1
@@ -49,14 +49,15 @@ def linear(X, Y):
 			else:
 				pass
 		Accuracy = (TP + TN)/float(TP + TN + FP + FN)
-		print("Accuracy of Prediction: {} @ Penalty: {}".format(Accuracy, c))
+		#print("Accuracy of Prediction: {} @ Penalty: {}".format(Accuracy, c))
 		avg_Accuracy[c] = Accuracy
 
 	print(avg_Accuracy)
 
 	bestC = max(avg_Accuracy.iterkeys(), key=(lambda k: avg_Accuracy[k]))
 	bestAccuracy = avg_Accuracy[bestC]
-	print("Most Accurate Penalty Value: {}, Accuracy: {}".format(bestC, bestAccuracy))
+	print("Most Accurate Penalty Value: {}".format(bestC))
+	print("Accuracy: {}".format(bestAccuracy))
 
 def rbf(X, Y):
 	# Performing Grid Search for Parameter Selection
@@ -68,11 +69,12 @@ def rbf(X, Y):
 	lv = LeaveOneOut(dataLength)
 	clf = GridSearchCV(svm, parameters, cv= lv)
 	clf.fit(X, Y)
-	print(clf.best_params_)
-	print(clf.best_score_)
+	print("Best Params for RBF: {}".format(clf.best_params_))
+	print("Accuracy: {}".format(clf.best_score_))
 
 # Cross Validation for pca
 # File path for training set - preprocessed via PCA and not
+print("Performing Cross Validation on PCA SLOO Data")
 trainName = "../dataset/pca/train.csv"
 trainPatientTypeName = "../dataset/patient_type/train.csv"
 
@@ -90,6 +92,7 @@ trainPatientType = np.array(trainPatientType).ravel()
 linear(trainData, trainPatientType)
 rbf(trainData, trainPatientType)
 
+print("\nPerforming Cross Validation on regular SLOO Data")
 # Cross Validation on Non PCA Method
 trainName = "../dataset/pandas/train.csv"
 trainData = pd.read_csv(trainName)
