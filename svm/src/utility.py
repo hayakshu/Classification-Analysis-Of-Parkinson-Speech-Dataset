@@ -2,13 +2,41 @@ import numpy as np
 import pandas as pd
 from numpy import loadtxt, unique
 
-# Script for extracting expected patient type into seperate array
+# Convert csv to pandas csv
+def csv_to_pandas(trainName, testName):
 
-# For extracting unqiue patient type from training and testing
-def patient_type(dataset, unique):
+	# Loding Data from SLOO Files
+	trainData = loadtxt(trainName, skiprows=1)
+	testData = loadtxt(testName, skiprows=1)
+	
+	# Convert to numpy datastructure
+	trainData = np.array([x[1:trainData.shape[1]] for x in trainData])
+	testData = np.array([x[1:testData.shape[1]] for x in testData])
+
+	# Saving Regular Dataset as Pandas DataFrame format
+	print("Saving CSV to Pandas CSV........")
+	trainData = pd.DataFrame(trainData)
+	testData = pd.DataFrame(testData)
+	trainData.to_csv("../dataset/train.csv")
+	testData.to_csv("../dataset/test.csv")
+	print("Done Save!")
+
+# Convert txt to pandas csv
+def data_to_pandas(train_results=None, test_results=None):
+	# Saving Results to Pandas DataFrame csv
+	print("Saving Python Data to CSV File..........")
+	train_results = pd.DataFrame(train_results)
+	test_results = pd.DataFrame(test_results)
+	train_results.to_csv("../dataset/train_patientType.csv")
+	test_results.to_csv("../dataset/test_patientType.csv")
+	print("Done Save!")
+
+# Extracting Parkinson's assesment results from training and testing
+def patient_type(dataset):
 	count = 0 # To keep track of patient number
+	uniques = unique(dataset[:,0])
 	data_results = []	
-	for i in unique:
+	for i in uniques:
 		prevPatient = None
 		for data in dataset:
 			if(i == data[0] and prevPatient != data[0]):
@@ -17,27 +45,3 @@ def patient_type(dataset, unique):
 				prevPatient = data[0]
 
 	return data_results
-
-trainName = "../dataset/train_data.txt"
-testName = "../dataset/test_data.txt"
-
-trainData = loadtxt(trainName, delimiter=",")
-testData = loadtxt(testName, delimiter=",")
-
-trainData = np.array(trainData)
-testData = np.array(testData)
-
-# Extracting number of patients
-n_patientsTrain = unique(trainData[:,0])
-n_patientsTest = unique(testData[:,0])
-
-# Extracting Data if each patient has Parkinsons or Not
-train_results = patient_type(trainData, n_patientsTrain)
-test_results = patient_type(testData, n_patientsTest)
-
-# Saving Results through Pandas DataFrame
-train_results = pd.DataFrame(train_results)
-test_results = pd.DataFrame(test_results)
-print("Saving Results Data to CSV File")
-train_results.to_csv("../dataset/train_patientType.csv")
-test_results.to_csv("../dataset/test_patientType.csv")
