@@ -15,7 +15,7 @@ def pca(trainName, testName):
 	testData = np.array([x[1:testData.shape[1]] for x in testData])
 
 	# Dimensionality reduction using pca
-	n_component = 90
+	n_component = 29
 	print("Performing PCA Analysis")
 	pca = PCA(n_components=n_component)
 	pca.fit(trainData)
