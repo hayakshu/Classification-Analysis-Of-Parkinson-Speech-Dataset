@@ -1,6 +1,8 @@
+from sklearn.svm import SVC
 import numpy as np
 import pandas as pd
-from sklearn.linear_model import SGDClassifier
+import sklearn
+from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, classification_report, matthews_corrcoef
 
 
@@ -22,12 +24,17 @@ def lr(trainName, trainPatientTypeName, testName, testPatientTypeName):
     testData = np.array(testData)
     testPatientType = testPatientType.iloc[:,1:]
     testPatientType = np.array(testPatientType).ravel()
-
+ 
+    scaler = sklearn.preprocessing.StandardScaler()
+    trainData=scaler.fit_transform(trainData)
+    testData=scaler.transform(testData)
+    
     print("Training Model...")
-    clf = SGDClassifier(penalty='l2', alpha= 1e-05, n_iter= 50, loss= 'log')
+    clf = LogisticRegression(penalty='l2', C= 0.5)
 
     clf.fit(trainData, trainPatientType)
     predictions = clf.predict(testData)
+    print clf.coef_
     
     print("Done!")
     print("Calculating Accuracy...")
@@ -60,8 +67,8 @@ def lr(trainName, trainPatientTypeName, testName, testPatientTypeName):
 
     #print "Specifity is %f"%specifity
     #print "Sensitivity is %f"%sensitivity
-    #print "Matthews Correlation Coefficient"
-    #print(matthews_corrcoef(predictions,testPatientType))
+    print "Matthews Correlation Coefficient"
+    print(matthews_corrcoef(predictions,testPatientType))
     
 
 print("Predicting Logistic Regression")
