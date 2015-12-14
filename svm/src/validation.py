@@ -3,8 +3,11 @@ from sklearn.grid_search import GridSearchCV
 from sklearn.metrics import matthews_corrcoef, classification_report, confusion_matrix
 from sklearn.svm import SVC
 from numpy import loadtxt
+from confusion_matrix import plot_confusion_matrix
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+
 
 # ---------------------------------------------- #
 # SCRIPT FOR CROSS VALIDATION ON SLOO DATASETS
@@ -12,7 +15,7 @@ import pandas as pd
 
 # Cross Validation Script on SLOO Data to determine 
 # Linear Kernal Cross Validation 
-def linear(X, Y):
+def linear(X, Y, title):
 
 	C = [1,2,5,10,15,20,25,30,50,100,200,500,1000,2000,5000,10000]
 	dataLength = len(X)
@@ -60,6 +63,7 @@ def linear(X, Y):
 		specificity[c] = Specificity
 
 	bestC = max(avg_Accuracy.iterkeys(), key=(lambda k: avg_Accuracy[k]))
+	# We are hashing the Specificity and Sensitivity based on the key that gives best accuracy
 	bestSensitivity = sensitivity[bestC]
 	bestSpecificity = specificity[bestC]
 	bestAccuracy = avg_Accuracy[bestC]
@@ -72,7 +76,14 @@ def linear(X, Y):
 	print("Classification Report:")
 	print(classification_report(predictions, expected))
 	print("Confusion Matrix")
-	print(confusion_matrix(predictions, expected))
+	cm = confusion_matrix(predictions, expected)
+	cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+	label1 = "Negative"
+	label2 = "Positive"
+	
+	plt.figure()
+	plot_confusion_matrix(cm, title, label1, label2)
+	
 
 def rbf(X, Y):
 	# Performing Grid Search for Parameter Selection
@@ -89,7 +100,7 @@ def rbf(X, Y):
 	return clf.best_params_
 
 # Reports results for validation on RBF: calculates the Sensitiviy and Specificity of Best Hyperparameters from validation set
-def rbf_analysis(X, Y, c, g):
+def rbf_analysis(X, Y, c, g, title):
 
 	print "Performing Cross Validation on Penalty: {}".format(c)
 	dataLength = len(X)
@@ -133,7 +144,14 @@ def rbf_analysis(X, Y, c, g):
 	print("Classification Report:")
 	print(classification_report(predictions, expected))
 	print("Confusion Matrix")
-	print(confusion_matrix(predictions, expected))
+	cm = confusion_matrix(predictions, expected)
+	cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+	label1 = "Negative"
+	label2 = "Positive"
+		
+	plt.figure()
+	plot_confusion_matrix(cm, title, label1, label2)
+	
 
 
 # ------------------------------------------ #
@@ -156,13 +174,17 @@ trainData = trainData.iloc[:,1:]
 trainData = np.array(trainData)
 trainPatientType = trainPatientType.iloc[:,1:]
 trainPatientType = np.array(trainPatientType).ravel()
+
 print("\nPerforming Linear SVM Cross-Validation...")
-linear(trainData, trainPatientType)
+title="Validation Results For PCA Linear SVM" 
+linear(trainData, trainPatientType, title)
+
 print("\nPerforming RBF SVM Cross-Validation...")
 hyperparameters = rbf(trainData, trainPatientType)
 c = hyperparameters['C']
 gamma = hyperparameters['gamma']
-rbf_analysis(trainData, trainPatientType, c, gamma)
+title="Validation Results For PCA RBF SVM" 
+rbf_analysis(trainData, trainPatientType, c, gamma, title)
 
 
 # ------------------------------------------ #
@@ -179,10 +201,12 @@ trainData = trainData.iloc[:,1:]
 trainData = np.array(trainData)
 
 print("\nPerforming Linear SVM Cross-Validation...")
-linear(trainData, trainPatientType)
+title="Validation Results For NON-PCA Linear SVM" 
+linear(trainData, trainPatientType, title)
 
 print("\nPerforming RBF SVM Cross-Validation...")
 hyperparameters = rbf(trainData, trainPatientType)
 c = hyperparameters['C']
 gamma = hyperparameters['gamma']
-rbf_analysis(trainData, trainPatientType, c, gamma)
+title="Validation Results For NON-PCA RBF SVM" 
+rbf_analysis(trainData, trainPatientType, c, gamma, title)

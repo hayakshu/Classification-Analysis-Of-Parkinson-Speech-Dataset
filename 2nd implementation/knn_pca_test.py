@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from sklearn.linear_model import SGDClassifier
+import sklearn
 from sklearn.metrics import confusion_matrix, classification_report, matthews_corrcoef
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.decomposition import PCA
@@ -24,14 +24,19 @@ def knn(trainName, trainPatientTypeName, testName, testPatientTypeName):
     testData = np.array(testData)
     testPatientType = testPatientType.iloc[:,1:]
     testPatientType = np.array(testPatientType).ravel()
-
+    
+    scaler = sklearn.preprocessing.StandardScaler()
+    trainData=scaler.fit_transform(trainData)
+    testData=scaler.transform(testData)
+    
     print("Training Model...")
     pca = PCA(n_components=10)
     pca.fit(trainData)
     pca.transform(testData)
     
-    clf = KNeighborsClassifier(n_neighbors= 1, weights = 'distance')
+    clf = KNeighborsClassifier(n_neighbors= 8, weights = 'distance')
     clf.fit(trainData, trainPatientType)
+
     predictions = clf.predict(testData)
     
     print("Done!")
@@ -61,15 +66,15 @@ def knn(trainName, trainPatientTypeName, testName, testPatientTypeName):
     print testPatientType
 
     #specifity=(float(TN)/(TN+FP))*100
-    #sensitivity=(float(TP)/(TP+FN))*100
+    sensitivity=(float(TP)/(TP+FN))*100
 
     #print "Specifity is %f"%specifity
-    #print "Sensitivity is %f"%sensitivity
-    #print "Matthews Correlation Coefficient"
-    #print(matthews_corrcoef(predictions,testPatientType))
+    print "Sensitivity is %f"%sensitivity
+    print "Matthews Correlation Coefficient"
+    print(matthews_corrcoef(predictions,testPatientType))
     
 
-print("Predicting Logistic Regression")
+print("Predicting KNN")
 
 trainName = "train.csv"
 trainPatientTypeName = "type_train.csv"
