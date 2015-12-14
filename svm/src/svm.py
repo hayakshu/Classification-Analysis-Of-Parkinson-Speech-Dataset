@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 
-def svm(trainName, trainPatientTypeName, testName, testPatientTypeName,k="linear", g='auto'):
+def svm(trainName, trainPatientTypeName, testName, testPatientTypeName, c=1, k="linear", g='auto'):
 	# Load data from files by converting to Pandas DataFrame
 	trainData = pd.read_csv(trainName)
 	trainPatientType = pd.read_csv(trainPatientTypeName)
@@ -23,7 +23,7 @@ def svm(trainName, trainPatientTypeName, testName, testPatientTypeName,k="linear
 	testPatientType = np.array(testPatientType).ravel()
 
 	print("Training Model...")
-	clf = SVC(C=1.0, kernel=k, gamma=g)
+	clf = SVC(kernel=k, C=c, gamma=g)
 	clf.fit(trainData, trainPatientType)
 	predictions = clf.predict(testData)
 	print("Done!")
@@ -43,24 +43,31 @@ def svm(trainName, trainPatientTypeName, testName, testPatientTypeName,k="linear
 	# testPatientType
 	# predictions
 	Accuracy = (TP + TN)/float(TP + TN + FP + FN)
-	print("Accuracy of Prediction {}: {}".format(k.upper(),Accuracy))
+	return "Accuracy of Prediction {}: {}\n".format(k.upper(),Accuracy)
 
-print("Predicting PCA Data")
-# File path for training set - preprocessed via PCA and not
-trainName = "../dataset/pca/train.csv"
-trainPatientTypeName = "../dataset/patient_type/train.csv"
-testName = "../dataset/pca/test.csv"
-testPatientTypeName = "../dataset/patient_type/test.csv"
-svm(trainName, trainPatientTypeName, testName, testPatientTypeName)
-svm(trainName, trainPatientTypeName, testName, testPatientTypeName,"rbf",1e-06)
-print("Done Predicting PCA Data\n")
 
-print("Predicting NON-PCA Data")
-trainName = "../dataset/pandas/train.csv"
-testName = "../dataset/pandas/test.csv"
-svm(trainName, trainPatientTypeName, testName, testPatientTypeName)
-svm(trainName, trainPatientTypeName, testName, testPatientTypeName,"rbf",1e-06)
-print("Done Predicting NON-PCA Data\n")
+with open('../svm_test_prediction_results/pca.txt', 'ab') as f: 
+	f.write("Predicting PCA Data\n")
+	# File path for training set - preprocessed via PCA and not
+	trainName = "../dataset/pca/train.csv"
+	trainPatientTypeName = "../dataset/patient_type/train.csv"
+	testName = "../dataset/pca/test.csv"
+	testPatientTypeName = "../dataset/patient_type/test.csv"
+	linear = svm(trainName, trainPatientTypeName, testName, testPatientTypeName, 1)
+	rbf = svm(trainName, trainPatientTypeName, testName, testPatientTypeName, 100,"rbf",1e-06)
+	f.write(linear)
+	f.write(rbf)
+	print("Done Predicting PCA Data\n")
+
+with open('../svm_test_prediction_results/no_pca.txt', 'ab') as f:
+	f.write("Predicting NON-PCA Data\n")
+	trainName = "../dataset/pandas/train.csv"
+	testName = "../dataset/pandas/test.csv"
+	linear = svm(trainName, trainPatientTypeName, testName, testPatientTypeName, 1)
+	rbf = svm(trainName, trainPatientTypeName, testName, testPatientTypeName, 100, "rbf",1e-06)
+	f.write(linear)
+	f.write(rbf)
+	print("Done Predicting NON-PCA Data\n")
 
 
 

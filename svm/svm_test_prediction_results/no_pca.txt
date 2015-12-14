@@ -1,0 +1,3 @@
+Predicting NON-PCA Data
+Accuracy of Prediction LINEAR: 0.142857142857
+Accuracy of Prediction RBF: 1.0
