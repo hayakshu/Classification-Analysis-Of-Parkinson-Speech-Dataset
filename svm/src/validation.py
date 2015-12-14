@@ -15,7 +15,7 @@ import pandas as pd
 
 # Cross Validation Script on SLOO Data to determine 
 # Linear Kernal Cross Validation 
-def linear(X, Y, title):
+def linear(X, Y, title, filename):
 
 	C = [1,2,5,10,15,20,25,30,50,100,200,500,1000,2000,5000,10000]
 	dataLength = len(X)
@@ -68,21 +68,25 @@ def linear(X, Y, title):
 	bestSpecificity = specificity[bestC]
 	bestAccuracy = avg_Accuracy[bestC]
 
-	print("Most Accurate Penalty Value: {}".format(bestC))
-	print("Accuracy of Prediction: {} @ Penalty: {}".format(bestAccuracy, c))
-	print("Sensitivity of Prediction: {} @ Penalty: {}".format(bestSensitivity, c))
-	print("Specificity of Prediction: {} @ Penalty: {}".format(bestSpecificity, c))
-	print("Matthews Correlation Coeefficient Value: {}".format(matthews_corrcoef(predictions, expected)))
-	print("Classification Report:")
-	print(classification_report(predictions, expected))
-	print("Confusion Matrix")
-	cm = confusion_matrix(predictions, expected)
-	cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
-	label1 = "Negative"
-	label2 = "Positive"
-	
-	plt.figure()
-	plot_confusion_matrix(cm, title, label1, label2)
+	with open(filename, 'ab') as f:
+
+		f.write("All Accuracy Values @ Each Penalty: {} \n".format(avg_Accuracy))
+		f.write("Most Accurate Penalty Value: {}\n".format(bestC))
+		f.write("Accuracy of Prediction: {} @ Penalty: {}\n".format(bestAccuracy, c))
+		f.write("Sensitivity of Prediction: {} @ Penalty: {}\n".format(bestSensitivity, c))
+		f.write("Specificity of Prediction: {} @ Penalty: {}\n".format(bestSpecificity, c))
+		f.write("Matthews Correlation Coeefficient Value: {}\n".format(matthews_corrcoef(predictions, expected)))
+		f.write("Classification Report: \n")
+		f.write(classification_report(predictions, expected))
+		f.write("Confusion Matrix\n")
+		cm = confusion_matrix(predictions, expected)
+		f.write(str(cm))
+		cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+		label1 = "Negative"
+		label2 = "Positive"
+		
+		plt.figure()
+		plot_confusion_matrix(cm, title, label1, label2)
 	
 
 def rbf(X, Y):
@@ -100,7 +104,7 @@ def rbf(X, Y):
 	return clf.best_params_
 
 # Reports results for validation on RBF: calculates the Sensitiviy and Specificity of Best Hyperparameters from validation set
-def rbf_analysis(X, Y, c, g, title):
+def rbf_analysis(X, Y, c, g, title, filename):
 
 	print "Performing Cross Validation on Penalty: {}".format(c)
 	dataLength = len(X)
@@ -137,21 +141,24 @@ def rbf_analysis(X, Y, c, g, title):
 	Specificity = TN/float(TN + FP)
 	Accuracy = (TP + TN)/float(TP + TN + FP + FN)
 
-	print("Sensitivity of Prediction: {} @ Penalty: {} @ Gamma: {}".format(Sensitivity, c, g))
-	print("Specificity of Prediction: {} @ Penalty: {} @ Gamma: {}".format(Specificity, c, g))
-	print("Accuracy of Prediction: {} @ Penalty: {} @ Gamma: {}".format(Accuracy, c, g))
-	print("Matthews Correlation Coeefficient Value: {}".format(matthews_corrcoef(predictions, expected)))
-	print("Classification Report:")
-	print(classification_report(predictions, expected))
-	print("Confusion Matrix")
-	cm = confusion_matrix(predictions, expected)
-	cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
-	label1 = "Negative"
-	label2 = "Positive"
+	# Saving data to file
+	with open(filename, 'ab') as f:
+		f.write("Sensitivity of Prediction: {} @ Penalty: {} @ Gamma: {}\n".format(Sensitivity, c, g))
+		f.write("Specificity of Prediction: {} @ Penalty: {} @ Gamma: {}\n".format(Specificity, c, g))
+		f.write("Accuracy of Prediction: {} @ Penalty: {} @ Gamma: {}\n".format(Accuracy, c, g))
+		f.write("Matthews Correlation Coeefficient Value: {}\n".format(matthews_corrcoef(predictions, expected)))
+		f.write("Classification Report:\n")
+		f.write(classification_report(predictions, expected))
+		f.write("Confusion Matrix\n")
+		cm = confusion_matrix(predictions, expected)
+		f.write(str(cm))
+		cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+		label1 = "Negative"
+		label2 = "Positive"
+			
+		plt.figure()
+		plot_confusion_matrix(cm, title, label1, label2)
 		
-	plt.figure()
-	plot_confusion_matrix(cm, title, label1, label2)
-	
 
 
 # ------------------------------------------ #
@@ -177,14 +184,14 @@ trainPatientType = np.array(trainPatientType).ravel()
 
 print("\nPerforming Linear SVM Cross-Validation...")
 title="Validation Results For PCA Linear SVM" 
-linear(trainData, trainPatientType, title)
+linear(trainData, trainPatientType, title, "../class_report/pca/linear.txt")
 
 print("\nPerforming RBF SVM Cross-Validation...")
 hyperparameters = rbf(trainData, trainPatientType)
 c = hyperparameters['C']
 gamma = hyperparameters['gamma']
 title="Validation Results For PCA RBF SVM" 
-rbf_analysis(trainData, trainPatientType, c, gamma, title)
+rbf_analysis(trainData, trainPatientType, c, gamma, title, "../class_report/pca/rbf.txt")
 
 
 # ------------------------------------------ #
@@ -202,11 +209,11 @@ trainData = np.array(trainData)
 
 print("\nPerforming Linear SVM Cross-Validation...")
 title="Validation Results For NON-PCA Linear SVM" 
-linear(trainData, trainPatientType, title)
+linear(trainData, trainPatientType, title, "../class_report/no_pca/linear.txt")
 
 print("\nPerforming RBF SVM Cross-Validation...")
 hyperparameters = rbf(trainData, trainPatientType)
 c = hyperparameters['C']
 gamma = hyperparameters['gamma']
 title="Validation Results For NON-PCA RBF SVM" 
-rbf_analysis(trainData, trainPatientType, c, gamma, title)
+rbf_analysis(trainData, trainPatientType, c, gamma, title, "../class_report/no_pca/rbf.txt")
