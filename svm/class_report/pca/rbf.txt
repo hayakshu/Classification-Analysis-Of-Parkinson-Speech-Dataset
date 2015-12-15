@@ -1,0 +1,14 @@
+Sensitivity of Prediction: 0.75 @ Penalty: 100 @ Gamma: 1e-06
+Specificity of Prediction: 0.7 @ Penalty: 100 @ Gamma: 1e-06
+Accuracy of Prediction: 0.725 @ Penalty: 100 @ Gamma: 1e-06
+Matthews Correlation Coeefficient Value: 0.45056355689
+Classification Report:
+             precision    recall  f1-score   support
+
+        0.0       0.70      0.74      0.72        19
+        1.0       0.75      0.71      0.73        21
+
+avg / total       0.73      0.72      0.73        40
+Confusion Matrix
+[[14  5]
+ [ 6 15]]

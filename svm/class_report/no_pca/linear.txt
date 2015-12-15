@@ -1,0 +1,16 @@
+All Accuracy Values @ Each Penalty: {10000: 0.75, 1: 0.75, 2: 0.75, 100: 0.75, 5: 0.75, 200: 0.75, 10: 0.75, 500: 0.75, 15: 0.75, 2000: 0.75, 1000: 0.75, 50: 0.75, 20: 0.75, 25: 0.75, 30: 0.75, 5000: 0.75} 
+Most Accurate Penalty Value: 10000
+Accuracy of Prediction: 0.75 @ Penalty: 10000
+Sensitivity of Prediction: 0.65 @ Penalty: 10000
+Specificity of Prediction: 0.85 @ Penalty: 10000
+Matthews Correlation Coeefficient Value: 0.51031036308
+Classification Report: 
+             precision    recall  f1-score   support
+
+        0.0       0.85      0.71      0.77        24
+        1.0       0.65      0.81      0.72        16
+
+avg / total       0.77      0.75      0.75        40
+Confusion Matrix
+[[17  7]
+ [ 3 13]]
