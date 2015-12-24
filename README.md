@@ -3,7 +3,7 @@
 
 #### About
 
-In this study, we aim to analyze and diagnose patients with PD by applying Machine Learning Techniques (ML) on speech datasets. In particular, we focus on applying variations of Logistic Regression, Support Vector Machines (SVM) and K-Nearest-Neighbour (KNN). The study aims to work on a previous study conducted by Istanbul University. The same datasets were used for this study and were obtained from the following [UCI Database link](https://archive.ics.uci.edu/ml/datasets/Parkinson+Speech+Dataset+with++Multiple+Types+of+Sound+Recordings).
+In this study, we aim to analyze and diagnose patients with Parkinson Disease (PD) by applying Machine Learning Techniques (ML) on speech datasets. In particular, we focus on applying variations of Logistic Regression, Support Vector Machines (SVM) and K-Nearest-Neighbour (KNN). The study aims to work on a previous study conducted by Istanbul University. The same datasets were used for this study and were obtained from the following [UCI Database link](https://archive.ics.uci.edu/ml/datasets/Parkinson+Speech+Dataset+with++Multiple+Types+of+Sound+Recordings).
 
 #### Disclaimer
 
